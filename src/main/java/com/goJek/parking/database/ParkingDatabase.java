@@ -11,13 +11,13 @@ import java.util.Map;
 public class ParkingDatabase {
 
     private static Map<String, ParkingSpot> parkedVehicleInfo = new HashMap<>();
-    private static List<ParkingFloor> parkingFloorInfo = new ArrayList<>();
+    private static ParkingFloor parkingFloorInfo = new ParkingFloor();
 
     public static Map<String,ParkingSpot> getParkedVehicleInfo(){
         return parkedVehicleInfo;
     }
 
-    public static List<ParkingFloor> getParkingFloorInfo(){
+    public static ParkingFloor getParkingFloorInfo(){
         return parkingFloorInfo;
     }
 }

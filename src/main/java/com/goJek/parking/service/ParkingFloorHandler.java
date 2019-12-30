@@ -2,16 +2,17 @@ package com.goJek.parking.service;
 
 import com.goJek.parking.model.ParkingFloor;
 import com.goJek.parking.model.ParkingSpot;
+import com.goJek.parking.model.Vehicle;
 
 import java.util.List;
 
-public interface ParkingFloorService {
+public interface ParkingFloorHandler {
 
-    ParkingFloor createParkingFloor(int noOfSpots);
+    ParkingFloor createParkingFloor(Integer size);
 
-    ParkingSpot park(String licensePlate,String color);
+    ParkingSpot parkVehicle(String regNumber, String color);
 
-    ParkingSpot remove(int spotNumber);
+    ParkingSpot removeVehicle(Integer regNumber);
 
     ParkingFloor getStatus();
 

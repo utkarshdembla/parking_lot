@@ -23,4 +23,5 @@ public class ParkingFloor {
     public void setParkingSpots(ParkingSpot[] parkingSpots) {
         this.parkingSpots = parkingSpots;
     }
+
 }

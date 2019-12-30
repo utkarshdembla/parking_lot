@@ -5,8 +5,7 @@
 # it.
 
 # This variable contains absolute path of this `parking_lot` script
-DIR="/home/utkarsh/IdeaProjects/parking_lot/target"
-java -jar $DIR/parking_lot-1.0-SNAPSHOT.jar
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # Use DIR variable above to pinpoint your jar/executable/main class
 # e.g.

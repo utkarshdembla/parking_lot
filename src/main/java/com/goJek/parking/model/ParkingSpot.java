@@ -10,7 +10,11 @@ public class ParkingSpot {
         this.spotNumber = spotNumber;
         this.vehicle = vehicle;
         this.ifFree = ifFree;
+    }
 
+    public ParkingSpot(int spotNumber,boolean ifFree){
+        this.spotNumber = spotNumber;
+        this.ifFree = ifFree;
     }
 
     public ParkingSpot(){}
